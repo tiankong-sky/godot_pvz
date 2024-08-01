@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class pea : Area2D
+public partial class Pea : Area2D
 {
 	// Called when the node enters the scene tree for the first time.
 	private double speed = 100;
