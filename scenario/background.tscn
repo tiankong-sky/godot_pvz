@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://b5n1yr14ngefr"]
+[gd_scene load_steps=5 format=3 uid="uid://b5n1yr14ngefr"]
 
 [ext_resource type="Texture2D" uid="uid://detdtv1iwtb56" path="res://material/images/background1.jpg" id="1_5qwjh"]
+[ext_resource type="Script" path="res://scripts/Pea.cs" id="2_8oysw"]
+[ext_resource type="Texture2D" uid="uid://lphbok0boose" path="res://material/images/ProjectilePea.png" id="3_as6rk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wjrsc"]
+size = Vector2(68, 91)
 
 [node name="Node2D" type="Node2D"]
 
@@ -8,3 +13,15 @@
 position = Vector2(560, 322)
 scale = Vector2(1.07, 1.07)
 texture = ExtResource("1_5qwjh")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(303, 151)
+script = ExtResource("2_8oysw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(35, 46.5)
+shape = SubResource("RectangleShape2D_wjrsc")
+
+[node name="ProjectilePea" type="Sprite2D" parent="Area2D"]
+position = Vector2(34, 49)
+texture = ExtResource("3_as6rk")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://o3qkgk03v7ty"]
 
-[ext_resource type="Script" path="res://scripts/pea.cs" id="1_wl0m1"]
-[ext_resource type="Texture2D" path="res://material/images/ProjectilePea.png" id="2_3xbeu"]
+[ext_resource type="Script" path="res://scripts/Pea.cs" id="1_wl0m1"]
+[ext_resource type="Texture2D" uid="uid://lphbok0boose" path="res://material/images/ProjectilePea.png" id="2_3xbeu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1spst"]
 radius = 12.0416
